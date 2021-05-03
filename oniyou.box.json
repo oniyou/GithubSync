@@ -9,7 +9,7 @@
 		"name": "HGI",
 		"keys": ["hgiHd"],
 		"author": "@gary",
-		"repo": ["https://raw.githubusercontent.com/oniyou/GithubSync"],
+		"repo": "https://raw.githubusercontent.com/oniyou/GithubSync",
 		"script": "https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.js",
 		"icons": ["https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.jpeg",
 			"https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.jpeg"
