@@ -41,7 +41,6 @@ let hgiHd = $.getdata('hgiHd')
     await hgiSign();
     // await farmingSign();
   }
-}}
 
 })()
   .catch((e) => $.logErr(e))
