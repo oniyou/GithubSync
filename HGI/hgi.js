@@ -30,7 +30,8 @@ hostname = hgi2.dataenergy.top
 */
 const $ = new Env('HGI');
 
-let hgiHd = $.getdata('hgiHd')
+let hgiHd = $.getdata('hgiHd') || '{}';
+console.log(hgiHd);
 // let id = '',name ='',txid = '',idex = '',type=''
 !(async () => {
   if (typeof $request !== "undefined") {
