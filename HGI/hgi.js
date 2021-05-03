@@ -31,7 +31,7 @@ hostname = hgi2.dataenergy.top
 const $ = new Env('HGI');
 
 let hgiHd = $.getdata('hgiHd') || '{}';
-console.log(hgiHd);
+// console.log(hgiHd);
 // let id = '',name ='',txid = '',idex = '',type=''
 !(async () => {
   if (typeof $request !== "undefined") {
@@ -70,7 +70,7 @@ function hgiSign(timeout = 0) {
         try {
     		const result = JSON.parse(data)
         	if(result.code == 1){
-  			$.log(`\nHGI签到成功，获得:${result.data.amount}u,签到后USDT为:${result.data.after}u`)
+  			$.log(`\nHGI签到成功，获得:${result.data[0].amount}u,签到后USDT为:${result.data[0].after}u`)
 	   	} else {
         		$.log(`\nHGI签到失败:${result.message}`)
  	   	}
