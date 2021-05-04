@@ -11,8 +11,8 @@
 		"author": "@gary",
 		"repo": "https://raw.githubusercontent.com/oniyou/GithubSync",
 		"script": "https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.js",
-		"icons": ["https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.jpeg",
-			"https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.jpeg"
+		"icons": ["https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/HGI.png",
+			"https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/HGI.png"
 		]
 	}]
 }
