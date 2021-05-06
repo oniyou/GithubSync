@@ -72,7 +72,7 @@ function hgiSign(timeout = 0) {
         	if(result.code == 1){
   			$.log(`\nHGI签到成功`)
 	   	} else {
-        		$.log(`\nHGI签到失败:${result.message}`)
+        		$.log(`\nHGI签到失败:${result.msg}`)
  	   	}
    
         } catch (e) {
