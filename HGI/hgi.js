@@ -22,7 +22,7 @@
 
 [rewrite_local]
 #HGI
-https://hgi2.dataenergy.top/api/AmountRecord/getCapitalFlowOne url script-request-header https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.js
+https://hgi2.dataenergy.top/api/book/everyday url script-request-header https://raw.githubusercontent.com/oniyou/GithubSync/main/HGI/hgi.js
 
 [MITM]
 hostname = hgi2.dataenergy.top
@@ -50,7 +50,7 @@ let hgiHd = $.getdata('hgiHd') || '{}';
 
 //数据获取
 function hgiCK() {
-   if ($request.url.indexOf("getCapitalFlowOne") > -1) {
+   if ($request.url.indexOf("api/book/everyday") > -1) {
   	  const hgiHd = JSON.stringify($request.headers)
    	  if(hgiHd)    $.setdata(hgiHd,`hgiHd`)
 	  $.log(hgiHd)
@@ -63,14 +63,14 @@ function hgiSign(timeout = 0) {
   return new Promise((resolve) => {
 
 	let url = {
-        url : 'https://hgi2.dataenergy.top/api/AmountRecord/getCapitalFlowOne',
+        url : 'https://hgi2.dataenergy.top/api/book/everyday',
         headers : JSON.parse(hgiHd),     
 	}
      $.get(url, async (err, resp, data) => {
         try {
     		const result = JSON.parse(data)
         	if(result.code == 1){
-  			$.log(`\nHGI签到成功，获得:${result.data[0].amount}u,签到后USDT为:${result.data[0].after}u`)
+  			$.log(`\nHGI签到成功`)
 	   	} else {
         		$.log(`\nHGI签到失败:${result.message}`)
  	   	}
